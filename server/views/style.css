@@ -1,0 +1,48 @@
+html {
+  color: whitesmoke;
+  background-color: black;
+  font-family: 'Barlow', Fallback sans-serif;
+}
+
+h1 {
+  font-family: 'Barlow Bold', Fallback sans-serif;
+  font-size: 160;
+  text-align: center;
+}
+
+h2 {
+  font-size: 80;
+  text-align: center;
+}
+
+h4 {
+  font-size: 30;
+}
+
+.download {
+  text-align: right;
+  padding: 2%;
+}
+
+a {
+  font-size: 20;
+  color: white;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('./fonts/barlow-v5-latin-300.woff2') format('woff2'),
+       url('./fonts/barlow-v5-latin-300.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Barlow Bold';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+       url('./fonts/barlow-v5-latin-800.woff2') format('woff2'),
+       url('./fonts/barlow-v5-latin-800.woff') format('woff');
+}

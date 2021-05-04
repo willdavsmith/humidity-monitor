@@ -1,0 +1,20 @@
+{
+  "name": "humidity-monitor-server",
+  "version": "1.0.0",
+  "description": "Web server for a humidity monitoring application.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Will Smith <willdavsmith@gmail.com> (https://github.com/willdavsmith/)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-zip": "^3.0.0",
+    "glob": "^7.1.6",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

@@ -1,0 +1,17 @@
+html
+  head
+    title= 'Humidity Monitor: ' + value + '%'
+    style
+      include style.css
+    script(src='https://www.gstatic.com/charts/loader.js')
+    script(src='./js/chart.js')
+  body
+    h2= 'Humidity Monitor'
+    h1= value + '%'
+    h4= 'This week'
+    h5= 'Last updated: ' + timestamp
+    div#chart
+    div.download
+      a(href='/download') Download Data
+    div.download
+      a(href='/download-all') Download All Data
