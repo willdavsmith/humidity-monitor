@@ -55,6 +55,7 @@ app.get('/download-all', function (_, res) {
 
 app.post('/update', function (req, res) {
   ready = false
+  res.sendStatus(201)
   if (req.body && req.body['payload']) {
     const payload = req.body['payload']
     if (!isNaN(payload)) {
@@ -64,12 +65,10 @@ app.post('/update', function (req, res) {
         stream.write(`${new Date().valueOf()},${newValue}\n`)
         stream.end()
         ready = true
-        res.sendStatus(201)
       }
     }
   }
   ready = true
-  res.sendStatus(400)
 })
 
 app.get('/data', function (_, res) {
